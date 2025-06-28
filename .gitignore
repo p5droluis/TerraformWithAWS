@@ -1,0 +1,13 @@
+# Ignore pdf files
+*.pdf
+
+# Ignore msi files
+*.msi
+
+# Ignore env files
+*.env
+
+#Ignore zip files
+*.zip
+#Ignore instalations files
+terraform_1.2.9_windows_386/
