@@ -24,7 +24,7 @@ Ter ou criar um repositorio no GitHub para gerenciar os arquivos terraform
 
 - Instruções
 
-Instalar o AWS CLI
+ - Instalar o AWS CLI
 1. Acesse a url https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi para baixar o instalador do AWS CLI
 2. Execute o arquivo AWSCLI64PY3.msi
 3. No wizard de instalação clique em Next
@@ -33,7 +33,7 @@ Instalar o AWS CLI
 6. Clique em install
 7. Clique em Finish para finalizar a instalação do AWS CLI
 
-Instalar o Terraform
+ - Instalar o Terraform
 1. Acesse a url https://releases.hashicorp.com/terraform/1.2.9/terraform_1.2.9_windows_386.zip para baixar o binário do terraform
 2. Clique com o botão direito no arquivo terraform_1.2.9_windows_386.zip e depois clique em extrair tudo
 3. Faça a extração para dentro do diretório C:\Program Files (x86)
@@ -48,7 +48,7 @@ Instalar o Terraform
 12. Abra o terminal
 13. Execute o comando terraform --version para verificar a instalação
 
-Instalar o VS Code
+ - Instalar o VS Code
 1. Acesse a url https://code.visualstudio.com/sha/download?build=stable&os=win32-x64 para baixar o instalador do VS Code
 2. Execute o arquivo VSCodeSetup-x64-1.71.0.exe para iniciar a instalação
 3. Aceite o termo de uso e clique em Next
@@ -58,28 +58,28 @@ Instalar o VS Code
 7. Clique em Install para iniciar a instalação
 8. Cliquem em finisih para finalizar a instalação do VS Code
 
-Instalar a extensão do terraform no VS Code
+ - Instalar a extensão do terraform no VS Code
 1. Com o VS Code aberto clique no ícone chamado extensões, localizado no menu lateral esquerdo
 2. Procure por HarshiCorp Terraform e clique em install
 3. Aguarde finalizar a instalação da extensão
 
-Criar um usuário IAM na AWS e criar as credências
+ - Criar um usuário IAM na AWS e criar as credências
 
 1. Criar uma conta na AWS com 12 meses free tier
 2. Criar um usuário no IAM e gerar credências de acesso
 3. Conceder role de admnistrator ou a role adequada para seu IAC
 3. Salvar Access Key e Secret Key para usar como variaveis de ambiente
 
-Criar um S3 Bucket para gerenciar o terraform.tfstate
+ - Criar um S3 Bucket para gerenciar o terraform.tfstate
 
 1. Acessar o AWS pesquisar por S3 
 2. Criar o Bucket Standard com versionamento
 
-Criar uma tabela no DynamoDB
+ - Criar uma tabela no DynamoDB
 
 1. Criar uma tabela DynamoDB com chave de partition LockID (String)
 
-Variaveis de ambientes para serem declaradas
+ - Variaveis de ambientes para serem declaradas
 
 Essas variavies serão usadas para o AWS CLI autenticar na primeira vez o terraform init for executado usando o backed remoto para controle do terraform.tfstate
 
@@ -91,15 +91,15 @@ Essas variaveis serão usadas pelo provider para realizar as implementações e 
 TF_VAR_AWS_PROVIDER_ACCESS_KEY = <Valor-da-AcessKey>
 TF_VAR_AWS_PROVIDER_SECRET_KEY = <Valor-da-SecretKey>
 
-Fazer o gitclone do repositorio TerraformWithAws
+ - Fazer o gitclone do repositorio TerraformWithAws
 
 1. git clone https://github.com/p5droluis/TerraformWithAws.git
 
-Arquivos que terá no repositório:
+ - Arquivos que terá no repositório:
 
 .gitignore -- Contem a lista de arquivos para serem ignorado durante um push
 README.md -- Documentação do repositório
-access_variables.tf -- Será configurado as variaveis de crendências para implantação e alterações da infrastrutura 
+access_variables.tf -- Será configurado as variaveis de crendências para implantação e alterações da infrastrutura
 aws_instance.tf -- Criação de uma Instancia EC2
 aws_network_interface.tf
 aws_s3_bucket.tf -- Criação de um Bucket S3
@@ -107,7 +107,7 @@ aws_subnet.tf -- Criação de uma subnet
 aws_vpc.tf -- Criação de uma VPC
 backend.tf --  Configurado o S3 Bucket para geraciar o Terraform.tfstate
 global_variables.tf -- Declaração de variaves para gerênciar melhor os arquivos
-outputs.tf -- Outputs para serem usando em futuras automações ou integrações com outros ferramentas.
+outputs.tf -- Outputs para serem usando em futuras automações ou integrações com outros ferramentas
 providers.tf -- Plugin usado para comunicação com o provider de nuvem e realizar a implantações e alteraçõe da infraestrutura
 terraform.tf -- Configurações gerais do TerraForm e versão do provider usado
 terraform.tfvars -- Variaveis para melhor gerenciamento do IAC
