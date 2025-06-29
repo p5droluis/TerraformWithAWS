@@ -13,6 +13,7 @@ Instalar as ferramentas necessárias para seguir com a implemntação do lab ou 
 dia-a-dia
 
 Instalar o AWS CLI.
+
 Instalar o terraform
 Instalar o VS Code
 Instalar a extensão do terraform no VS Code
