@@ -3,9 +3,9 @@ Lab criado para implementação de uma infraestrutura na AWS usando o TerraForm
 
 Conhecimentos necessário para implantar esse lab:
 
-AWS Cloud Practitioner Essentials
-Terraform
-GitHub
+ - AWS Cloud Practitioner Essentials
+ - Terraform
+ - GitHub
 
 
 # Pré Requisitos
