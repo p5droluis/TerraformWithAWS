@@ -84,11 +84,13 @@ dia-a-dia
 Essas variavies serão usadas para o AWS CLI autenticar na primeira vez o terraform init for executado usando o backed remoto para controle do terraform.tfstate
 
 AWS_SECRET_ACCESS_KEY = "Valor_Access_Key"
+
 AWS_SECRET_ACCESS_KEY = "Valor_SecretKey"
 
 Essas variaveis serão usadas pelo provider para realizar as implementações e alterações de infrastrutura na AWS.
 
 TF_VAR_AWS_PROVIDER_ACCESS_KEY = "Valor_Access_Key"
+
 TF_VAR_AWS_PROVIDER_SECRET_KEY = "Valor_Access_Key"
 
  - Fazer o gitclone do repositorio TerraformWithAws
