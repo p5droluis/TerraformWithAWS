@@ -114,10 +114,10 @@ TF_VAR_AWS_PROVIDER_SECRET_KEY = "Valor_Access_Key"
 
 ## Terraform comandos
 
-2. Dentro do repositório que foi clonado rodar o comando terraform init
-3. Executar o comando terraform plan para ver as implantações a serem feitas
-4. Executar o comando terraform apply --auto-approve para implantar as alterações
-5. Executar o comando terraform destroy --auto-approve para remover todos os recursos provisionados.
+1. Dentro do repositório que foi clonado rodar o comando terraform init
+2. Executar o comando terraform plan para ver as implantações a serem feitas
+3. Executar o comando terraform apply --auto-approve para implantar as alterações
+4. Executar o comando terraform destroy --auto-approve para remover todos os recursos provisionados.
 
 ## Terraform files
 
