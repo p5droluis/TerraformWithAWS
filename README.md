@@ -22,7 +22,7 @@ dia-a-dia
 - Criar uma tabela no DynamoDB para ativar o locking do arquivo terraform.tfstate e evitar alterações simultâneas.
 - Ter ou criar um repositorio no GitHub para gerenciar os arquivos terraform.
 
-- Instruções
+## Instruções
 
  - Instalar o AWS CLI
 1. Acesse a url https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi para baixar o instalador do AWS CLI
