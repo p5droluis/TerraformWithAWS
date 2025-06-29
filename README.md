@@ -113,7 +113,7 @@ TF_VAR_AWS_PROVIDER_SECRET_KEY = "Valor_Access_Key"
   - backend.tf --  Configurado o S3 Bucket para geraciar o Terraform.tfstate
   -  global_variables.tf -- Declaração de variaves para gerênciar melhor os arquivos
   - outputs.tf -- Outputs para serem usando em futuras automações ou integrações com outros ferramentas
-  - providers.tf -- Plugin usado para comunicação com o provider de nuvem e realizar a implantações e alteraçõe da infraestrutura
+  - providers.tf -- Plugin usado para comunicação com o provider de nuvem e realizar a implantações e alterações da infraestrutura
   - terraform.tf -- Configurações gerais do TerraForm e versão do provider usado
   - terraform.tfvars -- Variaveis para melhor gerenciamento do IAC
 
