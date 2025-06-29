@@ -13,15 +13,14 @@ Instalar as ferramentas necessárias para seguir com a implemntação do lab ou 
 dia-a-dia
 
 Instalar o AWS CLI.
-
-Instalar o terraform
-Instalar o VS Code
-Instalar a extensão do terraform no VS Code
-Criar uma conta na AWS 12 meses free tier
-Criar criar um usuário no IAM e criar chaves de acesso
-Criar um S3 bucket para gerenciar o terraform.tfstate
-Criar uma tabela no DynamoDB para ativar o locking do arquivo terraform.tfstate e evitar alterações simultâneas
-Ter ou criar um repositorio no GitHub para gerenciar os arquivos terraform
+Instalar o terraform.
+Instalar o VS Code.
+Instalar a extensão do terraform no VS Code.
+Criar uma conta na AWS 12 meses free tier.
+Criar criar um usuário no IAM e criar chaves de acesso.
+Criar um S3 bucket para gerenciar o terraform.tfstate.
+Criar uma tabela no DynamoDB para ativar o locking do arquivo terraform.tfstate e evitar alterações simultâneas.
+Ter ou criar um repositorio no GitHub para gerenciar os arquivos terraform.
 
 - Instruções
 
