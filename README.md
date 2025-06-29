@@ -53,3 +53,50 @@ Instalar a extensão do terraform no VS Code
 2. Procure por HarshiCorp Terraform e clique em install.
 3. Aguarde finalizar a instalação da extensão.
 
+#Terraform files
+
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.0.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.0.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_instance.foo](https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/instance) | resource |
+| [aws_network_interface.foo](https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface) | resource |
+| [aws_s3_bucket.mytfbucket](https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket) | resource |
+| [aws_subnet.my_subnet](https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/subnet) | resource |
+| [aws_vpc.my_vpc](https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_AWS_PROVIDER_ACCESS_KEY"></a> [AWS\_PROVIDER\_ACCESS\_KEY](#input\_AWS\_PROVIDER\_ACCESS\_KEY) | User Access key | `string` | n/a | yes |
+| <a name="input_AWS_PROVIDER_SECRET_KEY"></a> [AWS\_PROVIDER\_SECRET\_KEY](#input\_AWS\_PROVIDER\_SECRET\_KEY) | User Secret key | `string` | n/a | yes |
+| <a name="input_ec2_name"></a> [ec2\_name](#input\_ec2\_name) | EC2 instance name | `string` | n/a | yes |
+| <a name="input_env"></a> [env](#input\_env) | Environment type | `string` | n/a | yes |
+| <a name="input_subnet_name"></a> [subnet\_name](#input\_subnet\_name) | Subnet name | `string` | n/a | yes |
+| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | VPC name | `string` | n/a | yes |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_ec2"></a> [ec2](#output\_ec2) | Show output EC2 Instance |
+| <a name="output_ec2_private_ip"></a> [ec2\_private\_ip](#output\_ec2\_private\_ip) | Show output EC2 instance private ip |
+<!-- END_TF_DOCS -->

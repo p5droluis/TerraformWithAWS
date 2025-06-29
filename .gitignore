@@ -9,5 +9,8 @@
 
 #Ignore zip files
 *.zip
+
 #Ignore instalations files
 terraform_1.2.9_windows_386/
+.terraform/
+.terraform.lock.hcl
