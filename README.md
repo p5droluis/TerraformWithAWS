@@ -83,13 +83,13 @@ dia-a-dia
 
 Essas variavies serão usadas para o AWS CLI autenticar na primeira vez o terraform init for executado usando o backed remoto para controle do terraform.tfstate
 
-AWS_SECRET_ACCESS_KEY = <Valor-da-AcessKey>
-AWS_SECRET_ACCESS_KEY = <Valor-da-SecretKey>
+AWS_SECRET_ACCESS_KEY = "Valor_Access_Key"
+AWS_SECRET_ACCESS_KEY = "Valor_SecretKey"
 
 Essas variaveis serão usadas pelo provider para realizar as implementações e alterações de infrastrutura na AWS.
 
-TF_VAR_AWS_PROVIDER_ACCESS_KEY = <Valor-da-AcessKey>
-TF_VAR_AWS_PROVIDER_SECRET_KEY = <Valor-da-SecretKey>
+TF_VAR_AWS_PROVIDER_ACCESS_KEY = "Valor_Access_Key"
+TF_VAR_AWS_PROVIDER_SECRET_KEY = "Valor_Access_Key"
 
  - Fazer o gitclone do repositorio TerraformWithAws
 
@@ -97,20 +97,22 @@ TF_VAR_AWS_PROVIDER_SECRET_KEY = <Valor-da-SecretKey>
 
  - Arquivos que terá no repositório:
 
-.gitignore -- Contem a lista de arquivos para serem ignorado durante um push
-README.md -- Documentação do repositório
-access_variables.tf -- Será configurado as variaveis de crendências para implantação e alterações da infrastrutura
-aws_instance.tf -- Criação de uma Instancia EC2
-aws_network_interface.tf
-aws_s3_bucket.tf -- Criação de um Bucket S3
-aws_subnet.tf -- Criação de uma subnet
-aws_vpc.tf -- Criação de uma VPC
-backend.tf --  Configurado o S3 Bucket para geraciar o Terraform.tfstate
-global_variables.tf -- Declaração de variaves para gerênciar melhor os arquivos
-outputs.tf -- Outputs para serem usando em futuras automações ou integrações com outros ferramentas
-providers.tf -- Plugin usado para comunicação com o provider de nuvem e realizar a implantações e alteraçõe da infraestrutura
-terraform.tf -- Configurações gerais do TerraForm e versão do provider usado
-terraform.tfvars -- Variaveis para melhor gerenciamento do IAC
+  -  .gitignore -- Contem a lista de arquivos para serem ignorado durante um push
+  -  README.md -- Documentação do repositório
+  -  access_variables.tf -- Será configurado as variaveis de crendências para implantação e alterações da infrastrutura
+  - aws_instance.tf -- Criação de uma Instancia EC2
+  - aws_network_interface.tf
+  - aws_s3_bucket.tf -- Criação de um Bucket S3
+  - aws_subnet.tf -- Criação de uma subnet
+  - aws_vpc.tf -- Criação de uma VPC
+  - backend.tf --  Configurado o S3 Bucket para geraciar o Terraform.tfstate
+  -  global_variables.tf -- Declaração de variaves para gerênciar melhor os arquivos
+  - outputs.tf -- Outputs para serem usando em futuras automações ou integrações com outros ferramentas
+  - providers.tf -- Plugin usado para comunicação com o provider de nuvem e realizar a implantações e alteraçõe da infraestrutura
+  - terraform.tf -- Configurações gerais do TerraForm e versão do provider usado
+  - terraform.tfvars -- Variaveis para melhor gerenciamento do IAC
+
+## Terraform comandos
 
 2. Dentro do repositório que foi clonado rodar o comando terraform init
 3. Executar o comando terraform plan para ver as implantações a serem feitas
